@@ -186,7 +186,7 @@
         item.innerHTML = `
           <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
             <div style="font-weight:600">${r.name}</div>
-            <span class="badge ${qualifies?"ok":"bad"}">${qualifies?"im Rahmen":"fehlend"}</span>
+            <span class="badge ${qualifies?"ok":"bad"}">${qualifies?"qualifiziert":"keine Qualifikation"}</span>
           </div>
           <div class="label">Grenze <span style="font-family:ui-monospace,Menlo,Consolas,monospace">${secondsToHms(r.thresholdSeconds)}</span></div>
           <div class="barwrap"><div class="barfill" style="width:${Math.min(100,pct)}%"></div></div>
